@@ -144,6 +144,7 @@ body {
 .projects-thumb a { position: relative; line-height: 0 !important; }
 
 .projects-thumb::before {
+  opacity: 0.5;
   display: block; position: absolute; content: '';
   width: 50%; height: 20px; top: 100%; left: 5px; margin-top: -20px; z-index: 1;
   background: url('../images/frame-shadow-left.png') top left no-repeat;
