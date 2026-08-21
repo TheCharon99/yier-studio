@@ -428,3 +428,10 @@ body {
   #page_title { margin-left: 10px !important; }
   #content { width: 100% !important; }
 }
+
+/* === 社交图标样式调整（对齐参考站） === */
+#logo .sns_icon a { margin: 0 5px; }
+.icon_ins { background: url('../images/icon_ins.png') no-repeat; background-size: 100% auto; }
+.icon_ins:hover { background: url('../images/icon_ins.png') no-repeat; background-size: 100% auto; }
+.icon_wb { background: url('../images/icon_wb.png') no-repeat; background-size: 100% auto; }
+.icon_wb:hover { background: url('../images/icon_wb.png') no-repeat; background-size: 100% auto; }
