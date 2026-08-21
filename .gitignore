@@ -1,0 +1,27 @@
+# 归档和多余文件
+_归档文件/
+_多余文件/
+
+# 本地服务器脚本
+server.py
+启动服务器.bat
+
+# Python脚本
+compress-*.py
+final-cleanup.py
+clean-*.py
+fix-*.py
+generate-*.py
+rename-*.py
+update-*.py
+run-*.py
+
+# 工作区
+.workbuddy/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 日志
+*.log
