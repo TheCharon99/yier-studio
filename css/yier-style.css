@@ -107,8 +107,8 @@ body {
 }
 .left .lines::before { width: 0; }
 .left .lines::after { width: 100%; }
-.lines div > * { display: block; margin-top: -9px; margin-bottom: 20px; }
-.lines span { color: #666666; font-size: 14px; }
+.lines div > * { display: block; margin-top: -6px; margin-bottom: 20px; }
+.lines span { color: #666666; font-size: 14px; padding: 0 10px; background: #fff; }
 
 /* === 项目介绍文字 === */
 #desc { padding-right: 10px; color: #999999; line-height: 150%; }
