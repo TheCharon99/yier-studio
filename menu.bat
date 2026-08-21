@@ -1,26 +1,27 @@
 @echo off
+chcp 936 >nul
 cd /d E:\portfolio\yier-studio
 echo.
 echo ================================
-echo   YiER Studio æ“ä½œèœå•
+echo   YiER Studio ²Ù×÷²Ëµ¥
 echo ================================
 echo.
-echo 1. æŸ¥çœ‹çŠ¶æ€
-echo 2. æ·»åŠ æ–°é¡¹ç›®
-echo 3. æäº¤æ¨é€
-echo 4. æ£€æŸ¥å›¾ç‰‡
-echo 5. å‹ç¼©å›¾ç‰‡
-echo 6. æ‰“å¼€ç½‘ç«™
-echo 0. é€€å‡º
+echo 1. ²é¿´×´Ì¬
+echo 2. Ìí¼ÓĞÂÏîÄ¿
+echo 3. Ìá½»ÍÆËÍ
+echo 4. ¼ì²éÍ¼Æ¬
+echo 5. Ñ¹ËõÍ¼Æ¬
+echo 6. ´ò¿ªÍøÕ¾
+echo 0. ÍË³ö
 echo.
-set /p choice="è¾“å…¥æ•°å­—: "
+set /p choice="ÊäÈëÊı×Ö: "
 if "%choice%"=="1" python batch_tools.py status
 if "%choice%"=="2" (
-    set /p name="é¡¹ç›®å: "
+    set /p name="ÏîÄ¿Ãû: "
     python batch_tools.py add "%name%"
 )
 if "%choice%"=="3" (
-    set /p msg="è¯´æ˜: "
+    set /p msg="ËµÃ÷: "
     python batch_tools.py commit "%msg%"
 )
 if "%choice%"=="4" python batch_tools.py check-images
