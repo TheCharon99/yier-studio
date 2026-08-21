@@ -3,36 +3,36 @@ chcp 65001 >nul
 cd /d E:\portfolio\yier-studio
 echo.
 echo ========================================
-echo    YiER Studio å¿«æ·æ“ä½œèœå•
+echo    YiER Studio ¿ì½İ²Ù×÷²Ëµ¥
 echo ========================================
 echo.
-echo  [1] æŸ¥çœ‹GitçŠ¶æ€
-echo  [2] åˆ›å»ºæ–°é¡¹ç›®
-echo  [3] æäº¤å¹¶æ¨é€
-echo  [4] ä»…æ¨é€
-echo  [5] æ£€æŸ¥å¤§å›¾
-echo  [6] æ‰¹é‡å‹ç¼©å›¾ç‰‡
-echo  [7] æ‰“å¼€ç½‘ç«™
-echo  [8] æ‰“å¼€æ•™ç¨‹
-echo  [9] æ‰“å¼€CSSæ–‡ä»¶
-echo [10] æ‰“å¼€é¡¹ç›®è¯¦æƒ…
-echo [0] é€€å‡º
+echo  [1] ²é¿´Git×´Ì¬
+echo  [2] ´´½¨ĞÂÏîÄ¿
+echo  [3] Ìá½»²¢ÍÆËÍ
+echo  [4] ½öÍÆËÍ
+echo  [5] ¼ì²é´óÍ¼
+echo  [6] ÅúÁ¿Ñ¹ËõÍ¼Æ¬
+echo  [7] ´ò¿ªÍøÕ¾
+echo  [8] ´ò¿ª½Ì³Ì
+echo  [9] ´ò¿ªCSSÎÄ¼ş
+echo [10] ´ò¿ªÏîÄ¿ÏêÇé
+echo [0] ÍË³ö
 echo.
-set /p choice="è¯·è¾“å…¥é€‰é¡¹: "
+set /p choice="ÇëÊäÈëÑ¡Ïî: "
 if "%choice%"=="1" python batch_tools.py status
 if "%choice%"=="2" (
-    set /p name="è¯·è¾“å…¥é¡¹ç›®åï¼ˆå¦‚ï¼šç´«é‡‘åºœ-ç°ä»£ç®€çº¦ï¼‰: "
+    set /p name="ÇëÊäÈëÏîÄ¿Ãû£¨Èç£º×Ï½ğ¸®-ÏÖ´ú¼òÔ¼£©: "
     python batch_tools.py add "%name%"
 )
 if "%choice%"=="3" (
-    set /p msg="è¯·è¾“å…¥æäº¤è¯´æ˜: "
+    set /p msg="ÇëÊäÈëÌá½»ËµÃ÷: "
     python batch_tools.py commit "%msg%"
 )
 if "%choice%"=="4" python batch_tools.py push
 if "%choice%"=="5" python batch_tools.py check-images
 if "%choice%"=="6" python batch_tools.py compress
 if "%choice%"=="7" python batch_tools.py open
-if "%choice%"=="8" start https://TheCharon99.github.io/yier-studio/æ•™ç¨‹.html
+if "%choice%"=="8" start https://TheCharon99.github.io/yier-studio/½Ì³Ì.html
 if "%choice%"=="9" python batch_tools.py open-css
 if "%choice%"=="10" python batch_tools.py open-detail
 echo.
