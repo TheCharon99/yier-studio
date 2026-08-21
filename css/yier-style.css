@@ -47,6 +47,10 @@ body {
 
 /* 微信二维码弹窗 */
 .wechat {
+  width: auto !important;
+  height: auto !important;
+  max-width: 76px;
+  max-height: 75px;
   position: absolute; top: -5px; left: 25px;
   width: 76px; height: 75px; z-index: 999; display: none;
 }
